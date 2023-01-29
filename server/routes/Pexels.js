@@ -11,6 +11,9 @@ router.get("/", async (req, res) => {
         headers: { Authorization: process.env.PEXELS_API_KEY },
       }
     );
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-App-Version, content-type");
+    res.header("Access-Control-Allow-Credentials", true);
     res.json(data.data);
   } catch (err) {
     res.status(500).json(err);
@@ -27,7 +30,9 @@ router.post("/search", async (req, res) => {
         headers: { Authorization: process.env.PEXELS_API_KEY },
       }
     );
-
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-App-Version, content-type");
+    res.header("Access-Control-Allow-Credentials", true);
     res.json(data.data);
   } catch (err) {
     res.status(500).json(err);
