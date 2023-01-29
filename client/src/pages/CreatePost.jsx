@@ -21,7 +21,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const res = await axios.post("http://localhost:8080/api/v1/dalle", {
+        const res = await axios.post("https://mern-jacky-chatapi.onrender.com/api/v1/dalle", {
           prompt: form.prompt,
         });
         console.log(res);
@@ -44,7 +44,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const res = await axios.post("http://localhost:8080/post", {
+        const res = await axios.post("https://mern-jacky-chatapi.onrender.com/post", {
           name: form.name,
           prompt: form.prompt,
           photo: form.photo,
