@@ -55,7 +55,7 @@ const Home = () => {
       <section className="max-w-7x1 max-auto">
         <div>
           <h1 className="font-extrabold text-[#222328] text-[32px]">
-            ChatAPI 圖片生成
+            ChatGPT 圖片生成
           </h1>
 
           <p className="mt-2 text-[#666e75] text-[16px] max-w[500px]  ">
