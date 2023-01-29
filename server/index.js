@@ -28,9 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 //跨域設定
 const corsOptions = {
   origin: [
-    "http://localhost:8080",
-    "http://localhost:3000",
-    "http://localhost:5173",
+    "https://mern-jacky-chatapi.onrender.com",
     "https://cloudinary.com/",
     "https://openai.com/",
     "https://api.pexels.com",
