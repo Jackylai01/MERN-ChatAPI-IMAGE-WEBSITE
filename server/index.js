@@ -34,6 +34,8 @@ const corsOptions = {
     "https://api.pexels.com",
   ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+  allowedHeaders: ["Content-Type", "Authorization"],
+  exposedHeaders: ["Content-Range", "X-Content-Range"],
   credentials: true,
 };
 
