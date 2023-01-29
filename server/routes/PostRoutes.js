@@ -12,6 +12,10 @@ cloudinary.config({
 router.route("/").get(async (req, res) => {
   try {
     const posts = await Post.find({});
+   
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-App-Version, content-type");
+    res.header("Access-Control-Allow-Credentials", true);
     res.status(200).json(posts);
   } catch (err) {
     res.status(500).json(err);
@@ -29,7 +33,10 @@ router.post("/", async (req, res) => {
       prompt,
       photo: photoUrl.url,
     });
-
+    
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-App-Version, content-type");
+    res.header("Access-Control-Allow-Credentials", true);
     res.status(201).json(newPost);
   } catch (err) {
     res.status(500).json(err);
