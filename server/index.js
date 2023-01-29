@@ -25,22 +25,8 @@ mongoose
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true }));
 
-//跨域設定
-const corsOptions = {
-  origin: [
-    "https://mern-jacky-chatapi.onrender.com",
-    "https://cloudinary.com/",
-    "https://openai.com/",
-    "https://api.pexels.com",
-  ],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-  allowedHeaders: ["Content-Type", "Authorization"],
-  exposedHeaders: ["Content-Range", "X-Content-Range"],
-  credentials: true,
-};
-
 //跨域
-app.use(cors(corsOptions));
+app.use(cors());
 
 //api
 app.use("/post", postRoute);
