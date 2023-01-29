@@ -11,7 +11,7 @@ const Pexels = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get("http://localhost:8080/api/pexels");
+        const res = await axios.get("https://mern-jacky-chatapi.onrender.com/api/pexels");
         setData(res.data);
       } catch (err) {
       } finally {
