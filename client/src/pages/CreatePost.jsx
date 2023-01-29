@@ -94,7 +94,7 @@ const CreatePost = () => {
               labeLName="Prompt"
               type="text"
               name="prompt"
-              placeholder="Jacky Lai"
+              placeholder="幫我生成一張台灣的風景照"
               value={form.prompt}
               handleChange={handleChange}
               isSurpriseMe
