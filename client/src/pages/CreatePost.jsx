@@ -76,8 +76,7 @@ const CreatePost = () => {
         <div>
           <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
           <p className="mt-2 text-[#666e75] text-[16px] max-w[500px] ">
-            Create imaginative and visually stunning images through DALL-E AI
-            and share them with the community
+           透過描述讓AI生成圖片，並分享到首頁後進行下載。
           </p>
         </div>
 
@@ -135,8 +134,7 @@ const CreatePost = () => {
           </div>
           <div className="mt-10">
             <p className="mt-2 text-[#666e75] text-[14px]">
-              Once you have created the image you want,you can share it with
-              others in the community
+                 將圖片生成的結果，分享到首頁。
             </p>
             <button
               type="submit"
