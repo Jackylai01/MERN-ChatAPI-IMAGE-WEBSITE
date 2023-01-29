@@ -25,9 +25,7 @@ const Home = () => {
       setLoading(true);
       try {
         const res = await axios.get("https://mern-jacky-chatapi.onrender.com/post");
-        if (res.statusText === "OK") {
-          setAllPosts(res.data);
-        }
+         setAllPosts(res.data);
       } catch (err) {
         console.log(err);
       } finally {
